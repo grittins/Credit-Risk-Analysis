@@ -15,9 +15,18 @@ Data Manipulation and Analysis:
 
 ## Overview of the Analysis
 
+Credit card credit dataset is from LendingClub, a peer-to-peer lending services company. 
+Imbalanced-learn and scikit-learn libraries are used to build and evaluate models using resampling. 
+
+The following tasks are completed: 
+- Oversampling using RandomOverSampler and SMOTE algorithms
+- Undersampling using the ClusterCentroids algorithm
+- A combination of over and undersampling using the SMOTEENN algorithm
+- To reduce bias, BalancedRandomForestClassifier and EasyEnsembleClassifier used to predict credit risk
+
 ## Results
 
-| Balanced Accuracy Scores| | 
+| Balanced Accuracy Scores | | 
 | ----------- | ----------- |
 | Naive Random Oversampling | 0.67 |
 | SMOTE Oversampling | 0.66 |
@@ -25,6 +34,8 @@ Data Manipulation and Analysis:
 | SMOTEENN | 0.64 |
 | Balanced Random Forest Classifier | 0.79 |
 | Easy Ensemble AdaBoost Classifier | 0.93 |
+
+### Imbalanced Classification Report
 
 - Naive Random Oversampling
 
